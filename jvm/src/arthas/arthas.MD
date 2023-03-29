@@ -38,7 +38,7 @@ path： {user.home}/logs/arthas-cache/result.log
 - trace       Trace the execution time of specified method invocation.
 - watch       显示指定方法调用的输入输出参数、返回对象和抛出异常
 - tt          Time Tunnel
-- jvm         Display the target JVM information
+- jvm         显示目标JVM信息
 - memory      Display jvm memory info.
 - perfcounter  Display the perf counter information.
 - ognl         xecute ognl expression.
