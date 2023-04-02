@@ -1,4 +1,4 @@
-package jvm内存模型;
+package 运行时数据区域;
 
 public class Demo {
     public static void main(String[] args) throws InterruptedException {
