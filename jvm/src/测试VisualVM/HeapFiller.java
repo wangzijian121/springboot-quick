@@ -5,11 +5,12 @@ import java.util.List;
 
 /***
  * 堆内存被字节数组对象填满
+ * Run VM Options: -XX:+UseConcMarkSweepGC -Xloggc:D:\数据\GC.log -XX:+PrintGCDetails -XX:GCLogFileSize=100M -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -Xmx500m -Xms500m -Xmn200m -Xss1m
  */
 public class HeapFiller {
     private static final int ONE_MB = 1024 * 1024;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         List<byte[]> list = new ArrayList<>();
         int count = 0;
         try {
@@ -17,10 +18,11 @@ public class HeapFiller {
                 byte[] bytes = new byte[ONE_MB];
                 list.add(bytes);
                 count++;
-                Thread.sleep(100);
+                Thread.sleep(50);
             }
         } catch (OutOfMemoryError e) {
             System.out.println("第 " + count + " 运行内存填满！");
+            throw new Exception(e);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
