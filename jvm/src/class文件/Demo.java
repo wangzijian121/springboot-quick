@@ -10,6 +10,7 @@ public class Demo {
     public static void main(String[] args) {
 
         Demo demo = new Demo();
+
         demo.get_Str("Wang Zijian");
     }
 
@@ -17,4 +18,5 @@ public class Demo {
         System.out.println("NUM:" + NUM);
         return name + "1";
     }
+
 }
