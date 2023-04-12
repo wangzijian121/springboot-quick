@@ -1,17 +1,19 @@
 package 测试VisualVM;
 
+
 public class Demo {
+
+    private static int num;
+
+    private String name = "wangzijian";
 
     public static void main(String[] args) {
         test();
     }
 
-    public static void test() {
-        int i = 0;
-        for (; ; ) {
-            //4 byte
-            int a = 1;
-            System.out.println(++i + "次");
-        }
+    public static int test() {
+        Demo demo = new Demo();
+        System.out.println(demo.name);
+        return ++num;
     }
 }
