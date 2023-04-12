@@ -1,16 +1,7 @@
 package 虚拟机类加载机制;
 
-public class Demo {
+public class GetClassLoader {
     public static void main(String[] args) {
-
-
-        //通过ClassLoader
-  /*      ClassLoader c =new ClassLoader() {
-            @Override
-            public Class<?> loadClass(String name) throws ClassNotFoundException {
-                return super.loadClass(name);
-            }
-        }*/
 
         //Launcher$AppClassLoader
         System.out.println(class文件.Demo.class.getClassLoader());
