@@ -1,10 +1,12 @@
-package 虚拟机类加载机制.com.zjyun;
+package com.zjyun;
 
 public class MyInfo {
 
-/*    private String name = "wangzijian";
+    private String name = "wangzijian";
     private Integer age = 20;
 
+    public MyInfo() {
+    }
 
     public MyInfo(String name, Integer age) {
         this.name = name;
@@ -33,10 +35,18 @@ public class MyInfo {
 
     public static void sayStaticHello() {
         System.out.println("HELLO WORLD!!");
-    }*/
-
-    public static void main(String[] args) {
-        System.out.println("main hello!!");
     }
 
+    public static void main(String[] args) {
+
+    }
+
+
+    @Override
+    public String toString() {
+        return "MyInfo{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
