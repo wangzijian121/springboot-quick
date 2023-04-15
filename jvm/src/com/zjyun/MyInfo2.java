@@ -1,3 +1,4 @@
+package com.zjyun;
 
 public class MyInfo2 {
 
