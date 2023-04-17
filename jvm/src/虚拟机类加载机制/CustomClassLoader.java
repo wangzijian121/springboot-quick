@@ -1,5 +1,6 @@
 package 虚拟机类加载机制;
 /**
+ * MyInfo.java 放在根目录
  * 使用 双亲委派模型 的自定义类加载器
  **/
 
@@ -74,15 +75,13 @@ public class CustomClassLoader extends ClassLoader {
         //null
         System.out.println(customClassLoader.getClass().getClassLoader().getParent().getParent());
 
-        Class c = customClassLoader.loadClass("MyInfo2");
+        Class c = customClassLoader.loadClass("MyInfo");
         try {
             Object myInfo = c.newInstance();
-            //com.zjyun.虚拟机类加载机制.MyInfo 信息
+            //com.zjyun.MyInfo 信息
             System.out.println("myInfo:" + myInfo);
             //看看MyInfo这个类的ClassLoader是谁？
-
-            System.err.println("c.getClass().getClassLoader()");
-            System.err.println("com.zjyun.虚拟机类加载机制.MyInfo ClassLoader:" + myInfo.getClass().getClassLoader());
+            System.out.println("ClassLoader:" + myInfo.getClass().getClassLoader());
 
         } catch (InstantiationException e) {
             throw new RuntimeException(e);

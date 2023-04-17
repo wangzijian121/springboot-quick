@@ -44,7 +44,7 @@ public class MyInfo {
 
     @Override
     public String toString() {
-        return "com.zjyun.虚拟机类加载机制.MyInfo{" +
+        return "com.zjyun.MyInfo{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';

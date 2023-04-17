@@ -1,8 +1,6 @@
-package 虚拟机类加载机制;
-
 public class MyInfo {
 
-    private String name = "这是classPath中的测试类";
+    private String name = "这是在java.class.path 中的测试类！";
     private Integer age = 20;
 
     public MyInfo() {
@@ -44,7 +42,7 @@ public class MyInfo {
 
     @Override
     public String toString() {
-        return "com.zjyun.虚拟机类加载机制.MyInfo{" +
+        return "com.zjyun.MyInfo{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';

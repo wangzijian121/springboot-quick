@@ -90,16 +90,16 @@ public class CustomClassLoader2 extends ClassLoader {
         //null
         System.out.println(customClassLoader.getClass().getClassLoader().getParent().getParent());
 
-        Class c = customClassLoader.loadClass("MyInfo2");
+        Class c = customClassLoader.loadClass("MyInfo");
         try {
 
             Object o = c.newInstance();
 
-            //com.zjyun.虚拟机类加载机制.MyInfo 信息
+            //com.zjyun.MyInfo 信息
             System.out.println(o);
             //看看MyInfo这个类的ClassLoader是谁？
             System.out.println("This Class Loader is " + o.getClass().getClassLoader());
-            System.out.println("This Class Loader is " + o.getClass().getClassLoader().getParent());
+            System.out.println("This Class Loader.getParent  is" + o.getClass().getClassLoader().getParent());
 
         } catch (InstantiationException e) {
             throw new RuntimeException(e);
