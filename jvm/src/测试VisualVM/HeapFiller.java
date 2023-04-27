@@ -1,16 +1,16 @@
 package 测试VisualVM;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /***
  * 堆内存被字节数组对象填满
  * Run VM Options: -XX:+UseConcMarkSweepGC -Xloggc:D:\数据\GC.log -XX:+PrintGCDetails -XX:GCLogFileSize=100M -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -Xmx500m -Xms500m -Xmn200m -Xss1m
  */
 public class HeapFiller {
-    private static final int ONE_MB = 1024 * 1024;
+    private static final int ONE_MB = 1024 * 1024*100;
 
     public static void main(String[] args) throws Exception {
+
+/*        System.out.println(ONE_MB);
         List<byte[]> list = new ArrayList<>();
         int count = 0;
         try {
@@ -25,7 +25,8 @@ public class HeapFiller {
             throw new Exception(e);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }
+        }*/
+        Thread.sleep(10000000);
     }
 }
 /**
