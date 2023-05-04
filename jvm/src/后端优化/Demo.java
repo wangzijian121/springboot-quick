@@ -1,5 +1,8 @@
 package 后端优化;
 
+/**
+ * 查看编译后的Class文件
+ */
 public class Demo {
 
 
@@ -11,10 +14,8 @@ public class Demo {
     }
 
     private static int add(int x, int y) {
-
         return x + y;
     }
-
 
 
 }

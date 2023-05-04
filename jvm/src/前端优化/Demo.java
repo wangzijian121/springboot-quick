@@ -1,6 +1,6 @@
 package 前端优化;
 
-public class IfDemo {
+public class Demo {
 
 /*    public static void main(String[] args) throws InterruptedException {
 
@@ -13,25 +13,20 @@ public class IfDemo {
 
             System.out.println("222");
         }
-
-
         //条件编译
         // 编译后会 int a = 7;
         int a = 3 + 4;
         System.out.println(a);
-
-
     }*/
 
 
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         int a = 1;
         int b = 2;
         int c = a + b;
         System.out.println("c = " + c);
-        // The following code is dead code
+        // 下面这一行是死代码，会被前端编译时优化掉。
         int d = a * b;
-
-    }*/
+    }
 
 }
