@@ -22,4 +22,7 @@ public class java_lang_string_test {
         System.out.println(name.subSequence(2,4));//ng
     }
 
+
 }
+
+
