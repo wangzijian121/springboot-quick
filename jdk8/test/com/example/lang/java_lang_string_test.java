@@ -1,3 +1,5 @@
+package com.example.lang;
+
 import org.junit.Test;
 
 public class java_lang_string_test {

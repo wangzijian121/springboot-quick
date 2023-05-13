@@ -1,3 +1,5 @@
+package com.example.lang;
+
 import org.junit.Test;
 
 public class Java_lang_objectTest {
@@ -22,7 +24,7 @@ public class Java_lang_objectTest {
     @Test
     public void testGetClass() {
         Demo demo = new Demo("123");
-        System.out.println(demo.getClass());//class Java_lang_objectTest$Demo
+        System.out.println(demo.getClass());//class java.lang.Java_lang_objectTest$Demo
     }
 
     @Test
