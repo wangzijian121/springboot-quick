@@ -1,6 +1,6 @@
 package duck;
 
-public class RubberDuck extends Duck {
+public class RubberDuck extends Duck implements Quackable{
     @Override
     public void quack() {
         System.out.println("橡皮鸭吱吱响！");
@@ -12,18 +12,8 @@ public class RubberDuck extends Duck {
     }
 
     @Override
-    public void fly() {
-        //no action
-    }
-
-    @Override
     public void display() {
         System.out.println("我是个橡皮鸭!");
-    }
-
-    public static void main(String[] args) {
-        RubberDuck rubberDuck = new RubberDuck();
-        rubberDuck.fly();
     }
 
 }

@@ -1,14 +1,14 @@
 package duck;
 
-public class RedheadDuck extends Duck {
+public class RedheadDuck extends Duck implements  Quackable{
     @Override
     public void quack() {
-
+        System.out.println("红头鸭叫！");
     }
 
     @Override
     public void swim() {
-
+        System.out.println("红头鸭游泳！");
     }
 
 

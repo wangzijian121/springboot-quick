@@ -1,6 +1,6 @@
 package duck;
 
-public class MallardDuck extends Duck {
+public class MallardDuck extends Duck implements Quackable,Flyable {
 
 
     @Override
