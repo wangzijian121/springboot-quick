@@ -14,7 +14,10 @@ public class MallardDuck extends Duck {
 
     }
 
-
+    @Override
+    public void fly() {
+        System.out.println("绿头鸭在飞！");
+    }
 
     @Override
     public void display() {

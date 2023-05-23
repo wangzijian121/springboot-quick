@@ -12,7 +12,15 @@ public abstract class Duck {
         System.out.println("鸭子默认游泳！");
     }
 
+    //fly
+    //
+    public void fly() {
+        /**
+         * 对代码的局部更改，导致了非局部的变化（例如，有的鸭子不会飞）{@link  RubberDuck#fly()}
+         */
+        System.out.println("鸭子默认的飞！");
 
+    }
 
     //display
     public abstract void display();
