@@ -1,9 +1,13 @@
 package duck;
 
-public class RubberDuck extends Duck implements Quackable{
-    @Override
-    public void quack() {
-        System.out.println("橡皮鸭吱吱响！");
+import duck.impl.FlyNoWay;
+import duck.impl.Squack;
+
+public class RubberDuck extends Duck {
+
+    public RubberDuck() {
+        flyBehavior=new FlyNoWay();
+        quackBehavior=new Squack();
     }
 
     @Override

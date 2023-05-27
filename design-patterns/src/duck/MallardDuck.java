@@ -1,11 +1,14 @@
 package duck;
 
-public class MallardDuck extends Duck implements Quackable,Flyable {
+import duck.impl.FlyWithWings;
+import duck.impl.Quack;
+
+public class MallardDuck extends Duck {
 
 
-    @Override
-    public void quack() {
-        System.out.println("绿头鸭-嘎嘎叫！");
+    public MallardDuck() {
+        quackBehavior=new Quack();
+        flyBehavior = new FlyWithWings();
     }
 
     @Override
@@ -15,12 +18,14 @@ public class MallardDuck extends Duck implements Quackable,Flyable {
     }
 
     @Override
-    public void fly() {
-        System.out.println("绿头鸭在飞！");
-    }
-
-    @Override
     public void display() {
         System.out.println("我是绿头鸭！");
+    }
+
+
+    public static void main(String[] args) {
+        MallardDuck mallardDuck=new MallardDuck();
+        mallardDuck.performFly();
+        mallardDuck.performQuack();
     }
 }

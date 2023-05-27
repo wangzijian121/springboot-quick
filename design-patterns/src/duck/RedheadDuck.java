@@ -1,9 +1,14 @@
 package duck;
 
-public class RedheadDuck extends Duck implements  Quackable{
-    @Override
-    public void quack() {
-        System.out.println("红头鸭叫！");
+import duck.impl.FlyWithWings;
+import duck.impl.Quack;
+
+public class RedheadDuck extends Duck {
+
+    public RedheadDuck() {
+        flyBehavior=new FlyWithWings();
+        quackBehavior=new Quack();
+
     }
 
     @Override
@@ -17,4 +22,6 @@ public class RedheadDuck extends Duck implements  Quackable{
     public void display() {
         System.out.println("我是红头鸭！");
     }
+
+
 }
