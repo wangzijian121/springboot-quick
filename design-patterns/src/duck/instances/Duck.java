@@ -1,4 +1,7 @@
-package duck;
+package duck.instances;
+
+import duck.FlyBehavior;
+import duck.QuackBehavior;
 
 public abstract class Duck {
 
@@ -24,4 +27,12 @@ public abstract class Duck {
     //display
     public abstract void display();
 
+
+    public void setFlyBehavior(FlyBehavior flyBehavior) {
+        this.flyBehavior = flyBehavior;
+    }
+
+    public void setQuackBehavior(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
+    }
 }

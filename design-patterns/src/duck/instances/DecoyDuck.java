@@ -1,4 +1,4 @@
-package duck;
+package duck.instances;
 
 import duck.impl.FlyNoWay;
 import duck.impl.MuteQuack;
