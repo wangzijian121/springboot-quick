@@ -11,11 +11,8 @@ public class GameHelperTest {
     @Test
     public void initWarship() {
         GameHelper gameHelper = new GameHelper();
-        List<WarShip> list = new ArrayList<>();
-        list.add(new WarShip());
-        list.add(new WarShip());
-        list.add(new WarShip());
-        List<WarShip> shipList=gameHelper.initWarship(list);
+
+        List<WarShip> shipList=gameHelper.initWarship();
         assert shipList.get(0).getName().equals("Warship1");
         assert shipList.get(1).getName().equals("Warship2");
         assert shipList.get(2).getName().equals("Warship3");

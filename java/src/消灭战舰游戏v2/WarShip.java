@@ -24,14 +24,12 @@ public class WarShip {
         this.position = position;
     }
 
-
-
     public WarShip() {
     }
 
-    public WarShip(String name, Map<Integer, Integer> position) {
+    public WarShip(String name, List<Point> position) {
         this.name = name;
-
+        this.position = position;
     }
 
     public String getName() {

@@ -13,8 +13,13 @@ public class GameHelper {
     /**
      * load Warship
      */
-    public List<WarShip> initWarship(List<WarShip> warShipList) {
-        // Create name for warship
+    public List<WarShip> initWarship() {
+        // Create  warships
+        List<WarShip> warShipList = new ArrayList<>();
+        warShipList.add(new WarShip());
+        warShipList.add(new WarShip());
+        warShipList.add(new WarShip());
+
         int i = 1;
         for (WarShip warShip : warShipList) {
             warShip.setName("Warship" + i);
@@ -32,7 +37,7 @@ public class GameHelper {
     public Point userInput() {
 
         //Get user input.
-        Point point = null;
+        Point point =new Point();
         while (true) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Please input position,Use comma split：");
@@ -80,7 +85,7 @@ public class GameHelper {
                     listPoint.add(new Point(offset, numberOne + 1));
                     listPoint.add(new Point(offset, numberOne + 2));
                 }
-                System.out.println(listPoint);
+
                 //Overlay or not
                 Boolean overlay = false;
                 for (WarShip warShipCheck : warShipList) {
@@ -100,11 +105,13 @@ public class GameHelper {
                 if (!overlay) {
                     //set
                     warShip.setPosition(listPoint);
+                    //作弊器
+                    System.out.println(listPoint);
                     break;
                 }
+
             }
         }
         return warShipList;
     }
-
 }
