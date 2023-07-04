@@ -34,6 +34,12 @@ public class Game {
             }
 
             //win
+            if(warShipList.size()==0||warShipList==null){
+                System.out.println("You Win!!!");
+                System.out.println("You hit count"+num);
+
+            }
+
             //result
 
         }
