@@ -24,7 +24,7 @@ jvm 模块大部分原来来自于《深入理解Java虚拟机 第3版》 中的
 - 环境:Open-JDK1.8.341
 - 开发工具:IDEA 2022
 
-## design-patterns
+## design-patterns模块
 设计模式的部分代码：
 - 环境:Open-JDK1.8.341
 
