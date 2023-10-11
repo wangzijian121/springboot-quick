@@ -1,4 +1,4 @@
-package duck.instances;
+package instances;
 
 import duck.QuackBehavior;
 import duck.impl.Quack;

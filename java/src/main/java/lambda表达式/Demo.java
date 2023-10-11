@@ -19,8 +19,8 @@ public class Demo {
 /*        for (String str : list) {
             System.out.println(str);
         }*/
-//        使用lambda输出
-//        list.forEach(str -> System.out.println(str));
+            /* 使用lambda输出 */
+        list.forEach(str -> System.out.println(str));
 
         System.out.println();
 
@@ -29,5 +29,7 @@ public class Demo {
         System.out.println("引用管道对象头：" + stream);
         System.out.println("切片操作：" + streamSliceOps);
         System.out.println("想要的输出：" + list.stream().limit(2).collect(Collectors.toList()));
+
+        list.forEach(a-> System.out.println("a:"+a));
     }
 }

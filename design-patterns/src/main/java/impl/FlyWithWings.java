@@ -1,4 +1,4 @@
-package duck.impl;
+package impl;
 
 import duck.FlyBehavior;
 

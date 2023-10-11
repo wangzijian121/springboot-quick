@@ -1,4 +1,4 @@
-package duck.instances;
+package instances;
 
 import duck.impl.FlyWithWings;
 import duck.impl.Quack;
