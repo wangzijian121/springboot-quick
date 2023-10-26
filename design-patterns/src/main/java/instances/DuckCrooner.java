@@ -1,7 +1,8 @@
 package instances;
 
-import duck.QuackBehavior;
-import duck.impl.Quack;
+
+import behavior.QuackBehavior;
+import impl.Quack;
 
 /**
  * 鸭鸣器，不属于鸭子。

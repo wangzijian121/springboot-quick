@@ -1,7 +1,8 @@
 package instances;
 
-import duck.impl.FlyWithWings;
-import duck.impl.Quack;
+
+import impl.FlyWithWings;
+import impl.Quack;
 
 public class RedheadDuck extends Duck {
 

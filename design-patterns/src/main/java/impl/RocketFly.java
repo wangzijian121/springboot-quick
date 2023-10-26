@@ -1,6 +1,7 @@
 package impl;
 
-import duck.FlyBehavior;
+
+import behavior.FlyBehavior;
 
 public class RocketFly  implements FlyBehavior {
     @Override

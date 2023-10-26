@@ -1,8 +1,9 @@
 package instances;
 
-import duck.impl.FlyNoWay;
-import duck.impl.MuteQuack;
-import duck.impl.RocketFly;
+
+import impl.FlyNoWay;
+import impl.MuteQuack;
+import impl.RocketFly;
 
 public class ModelDuck extends Duck {
 

@@ -1,7 +1,8 @@
 package instances;
 
-import duck.FlyBehavior;
-import duck.QuackBehavior;
+
+import behavior.FlyBehavior;
+import behavior.QuackBehavior;
 
 public abstract class Duck {
 

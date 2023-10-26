@@ -1,6 +1,7 @@
 package impl;
 
-import duck.QuackBehavior;
+
+import behavior.QuackBehavior;
 
 public class Quack implements QuackBehavior {
 

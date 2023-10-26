@@ -1,7 +1,8 @@
 package instances;
 
-import duck.impl.FlyNoWay;
-import duck.impl.Squack;
+
+import impl.FlyNoWay;
+import impl.Squack;
 
 public class RubberDuck extends Duck {
 

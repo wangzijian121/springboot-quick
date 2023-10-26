@@ -1,7 +1,8 @@
 package instances;
 
-import duck.impl.FlyNoWay;
-import duck.impl.MuteQuack;
+
+import impl.FlyNoWay;
+import impl.MuteQuack;
 
 /**
  * 假鸭子类
