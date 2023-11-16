@@ -1,7 +1,5 @@
-package c_手写循环队列;
+package b_队列queue.b_3循环队列;
 
-
-import javafx.beans.binding.ObjectExpression;
 
 import java.util.Arrays;
 

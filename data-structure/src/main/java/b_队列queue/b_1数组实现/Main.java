@@ -1,4 +1,4 @@
-package b_手写队列;
+package b_队列queue.b_1数组实现;
 
 import java.util.Scanner;
 

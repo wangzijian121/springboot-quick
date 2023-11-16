@@ -1,4 +1,4 @@
-package a_手写稀疏矩阵;
+package a_数组array.稀疏数组;
 
 import org.apache.commons.math3.FieldElement;
 import org.apache.commons.math3.linear.*;

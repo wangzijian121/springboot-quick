@@ -1,4 +1,4 @@
-package b_手写队列;
+package b_队列queue.b_1数组实现;
 
 /**
  * 使用数组实现 先进先出FIFO 队列
