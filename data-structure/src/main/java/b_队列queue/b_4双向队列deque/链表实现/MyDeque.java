@@ -1,6 +1,4 @@
-package b_队列queue.b_4双向队列deque;
-
-import b_队列queue.b_2链表实现.LinkedNode;
+package b_队列queue.b_4双向队列deque.链表实现;
 
 /**
  * 双向队列 double-ended queue

@@ -1,4 +1,4 @@
-package b_队列queue.b_4双向队列deque;
+package b_队列queue.b_4双向队列deque.链表实现;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
