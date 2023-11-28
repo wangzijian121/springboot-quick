@@ -1,4 +1,4 @@
-package b_手写链表_linkedlist;
+package b_链表_linkedlist;
 
 /**
  * @author zijian Wang
