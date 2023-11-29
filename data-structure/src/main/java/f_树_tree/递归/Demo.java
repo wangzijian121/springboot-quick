@@ -2,6 +2,7 @@ package f_树_tree.递归;
 
 /**
  * 递归求阶乘
+ * @author zijian Wang
  */
 public class Demo {
 
@@ -18,6 +19,5 @@ public class Demo {
         System.out.println(jieCheng(0));
         System.out.println(jieCheng(5));
         System.out.println(jieCheng(10));
-
     }
 }
