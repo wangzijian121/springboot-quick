@@ -16,9 +16,6 @@ public class BinarySearchTreeNode {
         this.value = value;
     }
 
-    public void setValue(int value) {
-        this.value = value;
-    }
 
     public String print() {
         return "BinarySearchTreeNode{" +
@@ -168,8 +165,8 @@ public class BinarySearchTreeNode {
      */
     public static BinarySearchTreeNode deleteMinNode(BinarySearchTreeNode rootNode) {
 
-        rootNode.setValue(666);
-/*        if (rootNode.left == null && rootNode.right == null) {
+
+        if (rootNode.left == null && rootNode.right == null) {
             return rootNode;
         }
         if (rootNode.left.left == null) {
@@ -179,7 +176,7 @@ public class BinarySearchTreeNode {
             return minNode;
         } else {
             deleteMinNode(rootNode.left);
-        }*/
+        }
         return null;
     }
 
