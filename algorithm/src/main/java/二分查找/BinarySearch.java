@@ -2,6 +2,11 @@ package 二分查找;
 
 /**
  * 问题：给定一个长度为N 的数组 nums ，元素按从小到大的顺序排列且不重复。请查找并返回元素 target 在该数组中的索引。
+ * 思路
+ * 1.开头结尾为i、j，判断 i、j的中间位置 m, 判断寻找的值大于还是小于中间值。
+ * 2.如果小于m m变为j
+ * 3.如果大于m m变为i
+ * 4.重复1
  *
  * @author zjian Wang
  */
@@ -14,13 +19,6 @@ public class BinarySearch {
         for (int i = 0; i < ARR_LEN; i++) {
             arr[i] = i + 1;
         }
-        /**
-         * 思路
-         * 1.开头结尾为i、j，判断 i、j的中间位置 m, 判断寻找的值大于还是小于中间值。
-         * 2.如果小于m m变为j
-         * 3.如果大于m m变为i
-         * 4.重复1
-         */
         //开头
         int i = 0;
         //结尾
@@ -40,7 +38,6 @@ public class BinarySearch {
                 System.out.println("共查找：" + count + "次,索引为：" + index);
                 return middleValue;
             }
-
             //分割范围
             if (num > middleValue) {
                 i = middleValue - 1;
