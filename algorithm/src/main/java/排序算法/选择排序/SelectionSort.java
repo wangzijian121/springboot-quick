@@ -49,7 +49,7 @@ public class SelectionSort {
     public static void main(String[] args) {
 
         int[] resArray = selectionSort();
-//        System.out.println(Arrays.toString(resArray));
+        System.out.println(Arrays.toString(resArray));
         /**
          * 10-> <0ms 45次
          * 100-><0ms 4950次
@@ -59,11 +59,12 @@ public class SelectionSort {
          * 8000->48ms  31996000次
          * 16000->165ms 127992000次
          *
-         * 可知：
-         * 时间复杂度为：O（n²）
+         * 可知:
+         * 1.时间复杂度为：O（n²）
          * 空间复杂度位：O（1）
-         * 非稳定排序： 不稳定
-         *
+         * 2.自适应性：无（选择排序则缺乏自适应性，无论输入数据的有序程度如何，都会执行相同数量的比较和交换操作。）
+         * 3.稳定性： 不稳定
+         * 4.就地性： 原地排序
          */
     }
 }

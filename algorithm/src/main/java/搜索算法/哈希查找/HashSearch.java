@@ -1,12 +1,10 @@
 package 搜索算法.哈希查找;
 
-import com.sun.scenario.effect.impl.ImagePool;
 import utils.RandomArray;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 /**
  * 问题：给定一个整数数组 nums 和一个目标元素 target ，
@@ -42,6 +40,7 @@ public class HashSearch {
 
     /**
      * 将比较的过程放在数组和哈希中，将数组的元素拿出来，【数值】做key，【索引】为value。
+     * 使用哈希表作为数据暂存， 因为哈希表的key唯一，查询时间复杂度为O(1)
      */
     public static void HashSearch() {
         int[] arr = RandomArray.getRandomArray(10);
@@ -61,10 +60,10 @@ public class HashSearch {
 
 
     public static void main(String[] args) {
-        //线性搜索 时间复杂度O(n²),空间复杂度o(1).
+        //线性搜索  时间复杂度O(n²),空间复杂度o(1).
         LinearSearch();
 
-        // 哈希优化搜索 时间复杂度为O(n),空间复杂度为O(n)
+        // 哈希优化搜索  时间复杂度为O(n),空间复杂度为O(n)
         HashSearch();
 
     }
