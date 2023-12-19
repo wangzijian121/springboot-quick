@@ -1,4 +1,4 @@
-package 排序算法.c_插入排序;
+package 排序算法.c_插入排序_insertion_sort;
 
 import utils.RandomArray;
 

@@ -1,4 +1,4 @@
-package 排序算法.d_快速排序;
+package 排序算法.d_快速排序_quick_sort;
 
 import utils.RandomArray;
 
