@@ -1,9 +1,6 @@
 package f_树_tree.堆;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * 堆
@@ -12,8 +9,7 @@ import java.util.List;
  */
 public class Heap {
 
-
-    int[] nums = null;
+    private int[] nums;
 
     public Heap(int[] nums) {
         this.nums = nums;
@@ -54,24 +50,51 @@ public class Heap {
      * @return
      */
     int parent(int i) {
-        return (i - 1) / 2; // 向下整除
+        return (i - 1) / 2;
     }
 
     /**
-     *
+     * 入堆
      */
-    public static void push(int num) {
+    public void push(int num) {
 
+        int[] newNums = new int[nums.length + 1];
+        for (int i = 0; i < nums.length; i++) {
+            newNums[i] = nums[i];
+        }
+        newNums[newNums.length - 1] = num;
+        nums = newNums;
     }
 
     /**
-     * 堆化
+     * 出堆
+     */
+    public int pull() {
+
+        int[] numsNew = new int[nums.length - 1];
+        int pullNum = nums[0];
+
+        for (int i = 1; i < nums.length - 1; i++) {
+            numsNew[0] = nums[nums.length - 1];
+            numsNew[i] = nums[i];
+        }
+
+        nums = numsNew;
+        return pullNum;
+    }
+
+    public int getTop() {
+        return nums[0];
+    }
+
+    /**
+     * 堆化：底->顶
      *
      * @param heap
      */
-    public static Heap siftUp(Heap heap) {
+    public Heap siftUp(Heap heap) {
 
-        int []  nums = heap.getNums();
+        int[] nums = heap.getNums();
         //插入点索引
         int i = nums.length - 1;
         //父节点索引
@@ -96,9 +119,65 @@ public class Heap {
         return heap;
     }
 
+    /**
+     * 堆化：顶->底
+     */
+    public void siftDown() {
+
+        int[] nums = this.getNums();
+        //插入点索引
+        int i = 0;
+        //左子节点
+        int left;
+        //右子节点
+        int right;
+
+        while (true) {
+
+            left = this.left(i);
+            right = this.right(i);
+
+            if ((left > nums.length && right > nums.length)
+                    || (nums[i] > nums[left] && nums[i] > nums[right])) {
+                break;
+            }
+
+            if (nums[i] < nums[left] && nums[left] > nums[right]) {
+                //交换 右
+                System.out.println("交换：" + i + "---" + left);
+                int temp = nums[i];
+                nums[i] = nums[left];
+                nums[left] = temp;
+                i = left;
+            } else {
+                //交换 左
+                System.out.println("交换：" + i + "---" + right);
+                int temp = nums[i];
+                nums[i] = nums[right];
+                nums[right] = temp;
+                i = right;
+            }
+            this.setNums(nums);
+        }
+    }
+
     public static void main(String[] args) {
-        int[] nums = new int[]{9, 8, 6, 6, 7, 5, 2, 1, 4, 3, 6, 2, 10};
+        //入堆-向上堆化
+   /*     int[] nums = new int[]{9, 8, 6, 6, 7, 5, 2, 1, 4, 3, 6, 2};
         Heap heap = new Heap(nums);
-        System.out.println(Arrays.toString(siftUp(heap).getNums()));
+        heap.push(666);
+        System.out.println(Arrays.toString(heap.siftUp(heap).getNums()));
+        //堆顶
+        System.out.println(heap.getTop());*/
+
+        //出堆-向下堆化
+        int[] nums = new int[]{9, 8, 7, 6, 7, 6, 2, 1, 4, 3, 6, 2, 5};
+        Heap heap = new Heap(nums);
+        System.out.println(Arrays.toString(heap.getNums()));
+        heap.pull();
+        heap.siftDown();
+        System.out.println(Arrays.toString(heap.getNums()));
+        System.out.println(heap.getTop());
+
     }
 }
