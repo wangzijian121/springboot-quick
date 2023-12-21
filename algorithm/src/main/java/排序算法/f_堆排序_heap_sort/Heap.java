@@ -1,4 +1,4 @@
-package f_树_tree.堆;
+package 排序算法.f_堆排序_heap_sort;
 
 import java.util.Arrays;
 
@@ -82,6 +82,7 @@ public class Heap {
 
         nums = numsNew;
         siftDown();
+        System.out.println(Arrays.toString(nums));
         return pullNum;
     }
 
@@ -136,21 +137,19 @@ public class Heap {
             left = this.left(i);
             right = this.right(i);
 
-            if ((left > nums.length && right > nums.length)
+            if ((left > nums.length-1 || right > nums.length-1)
                     || (nums[i] > nums[left] && nums[i] > nums[right])) {
                 break;
             }
 
             if (nums[i] < nums[left] && nums[left] > nums[right]) {
                 //交换 右
-                System.out.println("交换：" + i + "---" + left);
                 int temp = nums[i];
                 nums[i] = nums[left];
                 nums[left] = temp;
                 i = left;
             } else {
                 //交换 左
-                System.out.println("交换：" + i + "---" + right);
                 int temp = nums[i];
                 nums[i] = nums[right];
                 nums[right] = temp;
@@ -158,25 +157,5 @@ public class Heap {
             }
             this.setNums(nums);
         }
-    }
-
-    public static void main(String[] args) {
-        //入堆-向上堆化
-   /*     int[] nums = new int[]{9, 8, 6, 6, 7, 5, 2, 1, 4, 3, 6, 2};
-        Heap heap = new Heap(nums);
-        heap.push(666);
-        System.out.println(Arrays.toString(heap.getNums()));
-        //堆顶
-        System.out.println(heap.getTop());*/
-
-        //出堆-向下堆化
-        int[] nums = new int[]{9, 8, 7, 6, 7, 6, 2, 1, 4, 3, 6, 2, 5};
-        Heap heap = new Heap(nums);
-        System.out.println(Arrays.toString(heap.getNums()));
-        heap.pull();
-        heap.siftDown();
-        System.out.println(Arrays.toString(heap.getNums()));
-        System.out.println(heap.getTop());
-
     }
 }
