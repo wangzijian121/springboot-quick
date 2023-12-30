@@ -44,5 +44,13 @@ public class BucketSort {
 
         int[] nums = new int[]{4, 1, 3, 7, 6, 9, 2, 1, 6, 5, 1};
         System.out.println(Arrays.toString(bucketSort(nums)));
+        /**
+         * 时间复杂度:O(n+k)k：桶的数量
+         * 空间复杂度：O(n+k)k：桶的数量
+         * 自适应： 自适应
+         * 稳定性：非稳定排序
+         * 原地性：非原地排序
+         *
+         */
     }
 }
