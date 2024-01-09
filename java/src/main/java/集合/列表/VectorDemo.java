@@ -1,6 +1,7 @@
-package 集合;
+package 集合.列表;
 
 import java.util.List;
+import java.util.Queue;
 import java.util.Vector;
 
 /**
@@ -12,6 +13,10 @@ public class VectorDemo {
         vector.add("wangzijian1");
         vector.add("wangzijian2");
         vector.add("wangzijian3");
+        vector.add(null);
+        vector.add(null);
+        vector.add(null);
         System.out.println(vector);
     }
+
 }

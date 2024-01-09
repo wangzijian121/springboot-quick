@@ -10,6 +10,7 @@ import java.util.List;
 public class SynchronizedListDemo {
     public static void main(String[] args) throws InterruptedException {
         List list = Collections.synchronizedList(new ArrayList<>());
+
         long start = System.currentTimeMillis();
         Thread thread1 = new Thread(() -> {
             for (int i = 0; i <= 10000; i++) {
