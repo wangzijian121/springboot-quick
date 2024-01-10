@@ -14,5 +14,8 @@ public class TreeSetDemo {
         treeSet.add("wangzijian2");
         treeSet.add("wangzijian2");
         System.out.println(treeSet);
+        treeSet.add(null);
+        treeSet.add(null);
+        System.out.println(treeSet);
     }
 }

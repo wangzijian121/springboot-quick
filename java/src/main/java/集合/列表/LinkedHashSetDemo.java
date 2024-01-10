@@ -15,5 +15,8 @@ public class LinkedHashSetDemo {
         linkedHashSet.add("wangzijian3");
         linkedHashSet.add("wangzijian3");
         System.out.println(linkedHashSet);
+        linkedHashSet.add(null);
+        linkedHashSet.add(null);
+        System.out.println(linkedHashSet);
     }
 }

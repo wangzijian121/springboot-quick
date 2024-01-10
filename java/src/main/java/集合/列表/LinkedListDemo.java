@@ -13,6 +13,7 @@ public class LinkedListDemo {
         list.add("wangzijian1");
         list.add("wangzijian2");
         list.add("wangzijian3");
+
         //索引
         System.out.println(list.indexOf("wangzijian1"));
         //出队
