@@ -1,4 +1,4 @@
-package 反射_reflection.demo.a_获取类的方法_构造_字段;
+package 反射_reflection.a_获取类的方法_构造_字段;
 
 import java.lang.reflect.*;
 
@@ -17,7 +17,7 @@ public class Method1 {
 
     public static void main(String args[]) {
         try {
-            Class cls = Class.forName("反射_reflection.demo.a_获取类的方法_构造_字段.Method1");
+            Class cls = Class.forName("反射_reflection.a_获取类的方法_构造_字段.Method1");
 
             Method methlist[] = cls.getDeclaredMethods();
             for (int i = 0; i < methlist.length;

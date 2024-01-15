@@ -1,4 +1,4 @@
-package 反射_reflection.demo;
+package 反射_reflection;
 
 /**
  * @author zijian Wang

@@ -1,4 +1,4 @@
-package 反射_reflection.demo.c_按名称调用方法;
+package 反射_reflection.c_按名称调用方法;
 
 import java.lang.reflect.*;
 

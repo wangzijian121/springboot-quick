@@ -1,4 +1,4 @@
-package 反射_reflection.demo.e_更改字段的值;
+package 反射_reflection.e_更改字段的值;
 
 import java.lang.reflect.*;
 
@@ -12,7 +12,7 @@ public class Field2 {
 
     public static void main(String args[]) {
         try {
-            Class cls = Class.forName("反射_reflection.demo.e_更改字段的值.Field2");
+            Class cls = Class.forName("反射_reflection.e_更改字段的值.Field2");
             Field fld = cls.getField("d");
             Field2 f2obj = new Field2();
             System.out.println("d = " + f2obj.d);

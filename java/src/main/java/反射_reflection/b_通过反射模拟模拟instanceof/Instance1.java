@@ -1,4 +1,4 @@
-package 反射_reflection.demo.b_通过反射模拟模拟instanceof;
+package 反射_reflection.b_通过反射模拟模拟instanceof;
 
 
 /**

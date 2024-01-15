@@ -1,4 +1,4 @@
-package 反射_reflection.demo.d_创建新对象;
+package 反射_reflection.d_创建新对象;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

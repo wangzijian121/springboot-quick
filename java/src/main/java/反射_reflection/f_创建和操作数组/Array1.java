@@ -1,4 +1,4 @@
-package 反射_reflection.demo.f_创建和操作数组;
+package 反射_reflection.f_创建和操作数组;
 
 import java.lang.reflect.*;
 
