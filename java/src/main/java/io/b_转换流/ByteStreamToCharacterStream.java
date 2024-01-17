@@ -15,24 +15,19 @@ public class ByteStreamToCharacterStream {
      */
     public static void main(String[] args) {
         String inputPath = "java/target/classes/io/input.txt";
-        String outputPath = "java/target/classes/io/output.txt";
 
         FileInputStream inputStream = null;
-        InputStreamReader inputStreamReader = null;
         BufferedReader bufferedReader = null;
-        FileWriter fileWriter = null;
 
         try {
             inputStream = new FileInputStream(inputPath);
             bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
             System.out.println(bufferedReader.readLine());
-
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
 
     }
 }

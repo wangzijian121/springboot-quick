@@ -1,4 +1,4 @@
-package io.d_带有缓冲的字符流;
+package io.a_文件流.d_带有缓冲的文件字符流;
 
 import java.io.*;
 
