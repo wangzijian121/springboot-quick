@@ -1,4 +1,4 @@
-package nio.h_匹配文件和字符串;
+package nio.a_file和path.h_匹配文件和字符串;
 
 import java.io.IOException;
 import java.nio.file.*;

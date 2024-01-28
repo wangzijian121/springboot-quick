@@ -1,4 +1,4 @@
-package nio.a_file.捕获异常;
+package nio.a_file和path.a_file.捕获异常;
 
 import java.io.BufferedReader;
 import java.io.IOException;

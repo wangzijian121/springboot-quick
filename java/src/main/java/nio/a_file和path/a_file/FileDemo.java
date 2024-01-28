@@ -1,4 +1,4 @@
-package nio.a_file;
+package nio.a_file和path.a_file;
 
 /**
  * 文件demo
@@ -6,6 +6,6 @@ package nio.a_file;
  */
 public class FileDemo {
     public static void main(String[] args) {
-        
+
     }
 }

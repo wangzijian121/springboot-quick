@@ -1,4 +1,4 @@
-package nio.c_检查文件或目录;
+package nio.a_file和path.c_检查文件或目录;
 
 import java.nio.file.Files;
 import java.nio.file.Path;

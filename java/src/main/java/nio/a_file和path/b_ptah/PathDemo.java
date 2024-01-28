@@ -1,4 +1,4 @@
-package nio.b_ptah;
+package nio.a_file和path.b_ptah;
 
 import java.io.IOException;
 import java.nio.file.Paths;

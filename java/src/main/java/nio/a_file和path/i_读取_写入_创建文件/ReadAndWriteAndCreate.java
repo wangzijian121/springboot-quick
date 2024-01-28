@@ -1,4 +1,4 @@
-package nio.i_读取_写入_创建文件;
+package nio.a_file和path.i_读取_写入_创建文件;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

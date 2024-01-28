@@ -1,4 +1,4 @@
-package nio.d_删除文件或目录;
+package nio.a_file和path.d_删除文件或目录;
 
 import java.io.IOException;
 import java.nio.file.Files;

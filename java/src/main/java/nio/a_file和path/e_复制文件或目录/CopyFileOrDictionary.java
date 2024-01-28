@@ -1,4 +1,4 @@
-package nio.e_复制文件或目录;
+package nio.a_file和path.e_复制文件或目录;
 
 import java.io.IOException;
 import java.nio.file.Files;

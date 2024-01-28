@@ -1,4 +1,4 @@
-package nio.g_获取元数据;
+package nio.a_file和path.g_获取元数据;
 
 import java.io.IOException;
 import java.nio.file.Files;
