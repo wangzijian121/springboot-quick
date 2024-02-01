@@ -13,7 +13,7 @@ import java.sql.PreparedStatement;
 public class PrintStreamDemo {
     public static void main(String[] args) throws  Exception{
         PrintStream printStream = null;
-        printStream=new PrintStream(new FileOutputStream("java/target/classes/io/output.txt"));
+        printStream=new PrintStream(new FileOutputStream("D:\\wangzijian.printStream"));
         System.setOut(printStream);
         System.out.println("wangzijian-print1");
         System.out.println("wangzijian-print2");

@@ -32,7 +32,7 @@ public class NioUtils {
      * @param selector
      */
     public static void getChannelInfo(Selector selector) {
-      /*  System.out.println("〰〰〰〰〰〰〰〰ChannelInfo〰〰〰〰〰");
+        System.out.println("〰〰〰〰〰〰〰〰ChannelInfo〰〰〰〰〰");
         System.out.println("所有通道数：" + selector.keys().size());
         System.out.println("已选择通道数：" + selector.selectedKeys().size());
 
@@ -69,6 +69,6 @@ public class NioUtils {
             }
         }
         System.out.println();
-        System.out.println("〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰");*/
+        System.out.println("〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰");
     }
 }
