@@ -1,9 +1,6 @@
 package lambda表达式.F_方法测试;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
@@ -63,8 +60,9 @@ public class Demo {
         numbers.stream()
                 .findAny()
                 .ifPresent(x -> System.out.println("findAny:" + x));
+
         //map 将流中的每个元素转为另一个元素
-        System.out.println("map:"+numbers.stream().map(x -> x * 2).collect(Collectors.toList()));
+        System.out.println("map:" + numbers.stream().map(x -> x * 2).collect(Collectors.toList()));
 
 
         //生成 hashmap
@@ -72,7 +70,7 @@ public class Demo {
                 .collect(Collectors.toMap(x -> new Random().nextInt(1000), x -> x)));
 
         //flatMap
-        System.out.println("flatMap:"+numbers.stream()
+        System.out.println("flatMap:" + numbers.stream()
                 .flatMap((x -> Stream.of(x, x * 2)))
                 .collect(Collectors.toList()));
 
@@ -101,11 +99,21 @@ public class Demo {
         numbers.stream()
                 .max(Integer::compareTo)
                 .ifPresent(System.out::println);
+
+        Stream.of(
+                        new Student("赵丽颖", 58, 59),
+                        new Student("杨颖", 56, 88),
+                        new Student("迪丽热巴", 56, 99),
+                        new Student("柳岩", 52, 77))
+                .max(Comparator.comparingInt(Student::getAge)).ifPresent(System.out::println);
+
+
         //min 最小值
         numbers.stream()
                 .min(Integer::compareTo)
                 .ifPresent(System.out::println);
-
+        //求和
+        System.out.println("求和：" + numbers.stream().reduce(0, Integer::sum));
 
         //skip 截取
         numbers.stream().skip(3).forEach(System.out::print);
@@ -125,6 +133,54 @@ public class Demo {
         System.out.println("reduce");
         numbers.stream().reduce(Integer::sum).ifPresent(System.out::println);
         //sorted
-        System.out.println("sorted:"+numbers.stream().sorted().collect(Collectors.toList()));
+        System.out.println("sorted:" + numbers.stream().sorted().collect(Collectors.toList()));
+
+        //collect
+
+        //1.收集到list
+        numbers.stream().collect(Collectors.toList());
+        //2.转为set
+        numbers.stream().collect(Collectors.toSet());
+
+        //转为数组
+        numbers.stream().toArray();
+        //聚合操作
+        numbers.stream()
+                .collect(Collectors.maxBy(Integer::compareTo))
+                .ifPresent(x -> System.out.println("maxBy:" + x));
+
+
+        //分组 group
+        Stream<Student> studentStream = Stream.of(
+                new Student("赵丽颖", 58, 95),
+                new Student("杨颖", 56, 88),
+                new Student("迪丽热巴", 56, 99),
+                new Student("柳岩", 52, 77));
+        //按照年龄分组
+        Map<Integer, List<Student>> collect1 = studentStream.collect(Collectors.groupingBy(Student::getAge));
+        collect1.forEach((key, value) -> System.out.println(key + "-" + value));
+        //按条件分组
+        Stream.of(
+                new Student("赵丽颖", 58, 59),
+                new Student("杨颖", 56, 88),
+                new Student("迪丽热巴", 56, 99),
+                new Student("柳岩", 52, 77)).collect(Collectors.groupingBy(x -> {
+            if (x.getScore() >= 60) {
+                return "及格";
+            } else {
+                return "不及格";
+            }
+        })).forEach((key, value) -> System.out.println(key + "-" + value));
+        //分区
+        Stream.of(
+                        new Student("赵丽颖", 58, 59),
+                        new Student("杨颖", 56, 88),
+                        new Student("迪丽热巴", 56, 99),
+                        new Student("柳岩", 52, 77))
+                .collect(Collectors.partitioningBy(s -> s.getScore() > 60))
+                .forEach((key, value) -> {
+                    System.out.println(key + "--分区-->" + value);
+                });
+
     }
 }
