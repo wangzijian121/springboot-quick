@@ -1,4 +1,4 @@
-package 多线程.通过Runnable创建线程;
+package 多线程.a_创建线程.通过Runnable创建线程;
 
 /**
  * @author zijian Wang

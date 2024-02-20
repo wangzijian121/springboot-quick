@@ -1,4 +1,5 @@
-package 多线程.继承thread创建线程;
+package 多线程.a_创建线程.继承thread创建线程;
+
 
 class MyThread extends Thread {
 
