@@ -1,4 +1,4 @@
-package 多线程.c_线程优先级;
+package 多线程.java并发编程实战.c_线程优先级;
 
 import java.util.stream.IntStream;
 

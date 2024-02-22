@@ -40,7 +40,7 @@ path： {user.home}/logs/arthas-cache/result.log
 - tt          Time Tunnel
 - jvm         显示目标JVM信息
 - memory      Display jvm memory info.
-- perfcounter  Display the perf counter information.
+- perfcounter  Display the perf counterUsedAtomic information.
 - ognl         xecute ognl expression.
 - mc           Memory compiler, compiles java files into bytecode and class files in memory.
 - redefine    Redefine classes. @see Instrumentation#redefineClasses(ClassDefinition...)

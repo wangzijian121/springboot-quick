@@ -1,4 +1,4 @@
-package 多线程.d_线程可见性;
+package 多线程.java并发编程实战.d_线程可见性;
 
 public class Visibility {
     private static boolean ready;

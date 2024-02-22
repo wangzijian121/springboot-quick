@@ -1,4 +1,4 @@
-package 多线程.a_创建线程.通过callable接口创建;
+package 多线程.java并发编程实战.a_创建线程.通过callable接口创建;
 
 import java.util.concurrent.*;
 

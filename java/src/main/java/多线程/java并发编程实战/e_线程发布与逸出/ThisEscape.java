@@ -1,5 +1,9 @@
-package 多线程.e_线程发布与逸出;
+package 多线程.java并发编程实战.e_线程发布与逸出;
 
+/**
+ * 线程的发布和逸出
+ * @author zijian Wang
+ */
 public class ThisEscape {
     private int value;
 

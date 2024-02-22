@@ -1,4 +1,4 @@
-package 多线程.a_创建线程.继承thread创建线程;
+package 多线程.java并发编程实战.a_创建线程.继承thread创建线程;
 
 
 class MyThread extends Thread {

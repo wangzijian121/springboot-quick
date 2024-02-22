@@ -1,4 +1,4 @@
-package 多线程.b_线程组;
+package 多线程.java并发编程实战.b_线程组;
 
 public class Demo {
     public static void main(String[] args) {
