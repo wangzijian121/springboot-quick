@@ -1,9 +1,11 @@
-package 多线程.java并发编程实战.f_设计线程安全的类;
+package 多线程.java并发编程实战.f_设计线程安全的类.线程安全的类;
 
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.IntStream;
 
 /**
+ * 使用原子变量 保证类的安全性
+ *
  * @author zijian Wang
  */
 public class CounterUsedAtomic {
