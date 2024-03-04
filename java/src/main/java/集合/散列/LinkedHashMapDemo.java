@@ -13,7 +13,6 @@ public class LinkedHashMapDemo {
         linkedHashMap.put(2,"222");
         linkedHashMap.put(3,"333");
         linkedHashMap.put(4,"444");
-
         System.out.println(linkedHashMap);
     }
 }
