@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
 @ThreadSafe
 public class CounterUsedSynchronized {
     @GuardedBy("this")
-    private long value = 0;
+    private long value = 0L;
 
 
     public Long getValue() {
@@ -21,19 +21,18 @@ public class CounterUsedSynchronized {
     /**
      * 使用synchronized 代码块
      */
- /*   public void increment() {
+    public void increment() {
         synchronized (this) {
             this.value++;
         }
-    }*/
+    }
 
     /**
      * 使用synchronized 修饰
      */
-    public  void increment() {
+ /*   public synchronized void increment() {
         this.value++;
-    }
-
+    }*/
     public static void main(String[] args) throws InterruptedException {
         for (; ; ) {
             CounterUsedSynchronized counterUsedAtomic = new CounterUsedSynchronized();
