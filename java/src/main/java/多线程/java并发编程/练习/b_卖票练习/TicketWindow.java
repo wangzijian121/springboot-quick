@@ -70,10 +70,7 @@ public class TicketWindow {
             }, "窗口" + x);
             thread.start();
         });
-
-
     }
-
 }
 
 
