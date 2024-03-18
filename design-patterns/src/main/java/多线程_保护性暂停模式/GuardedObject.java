@@ -8,7 +8,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * 2个线程，一个获取资源，并传递给另一个线程
+ * 2个线程，一个获取资源，获取资源后传递给另一个线程
+ *
  * 消费者超时时间
  *
  * @author zijian Wang
@@ -21,7 +22,7 @@ public class GuardedObject {
 
     public void get() throws InterruptedException {
         long timeout = 3000;
-        System.out.println("超时时间：" + timeout + "毫秒");
+        System.out.println("超时时间："+timeout+"毫秒");
         synchronized (lock) {
             long startTime = System.currentTimeMillis();
             long passedTime = 0;
