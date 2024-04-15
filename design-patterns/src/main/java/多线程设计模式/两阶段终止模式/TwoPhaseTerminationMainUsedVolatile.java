@@ -1,46 +1,46 @@
-package 两阶段终止模式;
+package 多线程设计模式.两阶段终止模式;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.TimeUnit;
 
 /**
- * 《两阶段终止模式》
- * 监控-2秒一次
+ * 《两阶段终止模式-使用volatile》
+ * 监控-1秒一次
  * 1.可能在监控时触发告警。
  * 2.可能在睡眠时触发告警。
  *
  * @author zijian Wang
  */
 @Slf4j(topic = "c.TwoPhaseTerminationMain")
-public class TwoPhaseTerminationMain {
+public class TwoPhaseTerminationMainUsedVolatile {
     public static void main(String[] args) throws InterruptedException {
-        TwoPhaseTermination twoPhaseTermination = new TwoPhaseTermination();
-        twoPhaseTermination.start();
+        TwoPhaseTerminationV2 twoPhaseTerminationV2 = new TwoPhaseTerminationV2();
+        twoPhaseTerminationV2.start();
 
-        TimeUnit.SECONDS.sleep(5000);
-        twoPhaseTermination.stop();
+        TimeUnit.SECONDS.sleep(5);
+        twoPhaseTerminationV2.stop();
     }
 }
 
 @Slf4j(topic = "c.TwoPhaseTermination")
-class TwoPhaseTermination {
+class TwoPhaseTerminationV2 {
 
-    private Thread monitor;
+    private volatile boolean single=false;
 
     public Thread start() {
 
-        monitor = new Thread(() -> {
+        Thread monitor = new Thread(() -> {
             for (; ; ) {
                 try {
-                    if (monitor.isInterrupted()) {
+                    if (single) {
                         log.error("监控异常!!!发送邮件");
                         break;
                     }
                     log.info("监控...");
-                    TimeUnit.SECONDS.sleep(2);
+                    TimeUnit.SECONDS.sleep(1);
                 } catch (InterruptedException e) {
-                    monitor.interrupt();//再次打断为打断正常方法，会为true
+                    throw new RuntimeException(e);
                 }
             }
         }, "thread-monitor");
@@ -49,6 +49,6 @@ class TwoPhaseTermination {
     }
 
     public void stop() {
-        monitor.interrupt();
+        single = true;
     }
 }
