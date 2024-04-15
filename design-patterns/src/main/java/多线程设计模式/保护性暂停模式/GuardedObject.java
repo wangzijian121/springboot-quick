@@ -1,4 +1,4 @@
-package 多线程设计模式.多线程_保护性暂停模式;
+package 多线程设计模式.保护性暂停模式;
 
 import lombok.extern.slf4j.Slf4j;
 

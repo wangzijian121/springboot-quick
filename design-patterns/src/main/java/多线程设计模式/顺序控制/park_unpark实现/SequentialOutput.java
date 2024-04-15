@@ -1,4 +1,4 @@
-package 多线程设计模式.多线程_顺序控制.park_unpark实现;
+package 多线程设计模式.顺序控制.park_unpark实现;
 
 import lombok.extern.slf4j.Slf4j;
 

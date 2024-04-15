@@ -1,6 +1,5 @@
-package 多线程设计模式.多线程_生产者_消费者模式;
+package 多线程设计模式.生产者_消费者模式;
 
-import jdk.nashorn.internal.objects.annotations.Constructor;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
