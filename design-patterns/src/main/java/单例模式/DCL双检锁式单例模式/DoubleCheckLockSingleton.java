@@ -1,7 +1,4 @@
-package 多线程设计模式.双重检查锁式单例模式;
-
-import java.util.Date;
-import java.util.stream.IntStream;
+package 单例模式.DCL双检锁式单例模式;
 
 /**
  * DCL 双重检查锁

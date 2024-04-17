@@ -1,4 +1,4 @@
-package 多线程设计模式.饿汉式单例模式;
+package 单例模式.饿汉式单例模式;
 
 import java.io.Serializable;
 
