@@ -1,4 +1,4 @@
-package 多线程设计模式.顺序控制.wait_notfiy_实现;
+package 多线程设计模式.顺序控制模式.wait_notfiy_实现;
 
 import lombok.extern.slf4j.Slf4j;
 

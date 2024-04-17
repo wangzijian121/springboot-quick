@@ -26,7 +26,7 @@ public class TwoPhaseTerminationMainUsedVolatile {
 @Slf4j(topic = "c.TwoPhaseTermination")
 class TwoPhaseTerminationV2 {
 
-    private volatile boolean single=false;
+    private volatile boolean single = false;
 
     public Thread start() {
 
