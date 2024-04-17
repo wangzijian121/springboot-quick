@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
  * 了，直接结束返回
  * 🤨思路  使用volatile 作为是否执行过的标志位。
  *
- * @author zijian Wang
+ * @author zijian  Wang
  */
 @Slf4j(topic = "c.BalkingDemo")
 public class BalkingDemo {
@@ -32,7 +32,6 @@ public class BalkingDemo {
             TimeUnit.SECONDS.sleep(2);
         }
     }
-
 }
 
 @Slf4j(topic = "c.ThreadUnit")
