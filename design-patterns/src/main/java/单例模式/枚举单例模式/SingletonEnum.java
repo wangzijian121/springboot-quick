@@ -1,4 +1,4 @@
-package 多线程设计模式.枚举单例模式;
+package 单例模式.枚举单例模式;
 
 /**
  * 枚举单例类
@@ -7,7 +7,9 @@ public enum SingletonEnum {
 
     INSTANCE;
 
-    // 可以在枚举中添加其他成员变量和方法
+    /**
+     * 可以在枚举中添加其他成员变量和方法
+     */
     private int value;
 
     public int getValue() {
