@@ -3,7 +3,7 @@ package 数据类型;
 /**
  * @author zijian Wang
  */
-public class Demo {
+public class DataType {
     public static void main(String[] args) {
         //1字节
         byte b = 127;
@@ -26,10 +26,12 @@ public class Demo {
         System.out.println(d);
 
         //2字节
-        char c = 'A';
+        char c = 65535;
+        char name = '王';
         //1字节
         boolean bo = false;
         System.out.println(c);
+        System.out.println((int) c);
         System.out.println(bo);
 
     }

@@ -1,4 +1,4 @@
-package 多线程.java并发编程.j_可见性;
+package 多线程.java并发编程.j_JMM;
 
 /**
  * @author zijian Wang
