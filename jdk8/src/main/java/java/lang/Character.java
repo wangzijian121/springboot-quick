@@ -26,9 +26,9 @@
 package java.lang;
 
 import java.util.Arrays;
-import java.util.Map;
 import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 
 /**
  * The {@code Character} class wraps a value of the primitive

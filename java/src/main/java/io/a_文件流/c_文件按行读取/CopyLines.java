@@ -1,10 +1,6 @@
 package io.a_文件流.c_文件按行读取;
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.BufferedReader;
-import java.io.PrintWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class CopyLines {
     public static void main(String[] args) throws IOException {

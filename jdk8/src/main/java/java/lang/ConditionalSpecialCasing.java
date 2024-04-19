@@ -2,12 +2,13 @@
 
 package java.lang;
 
+import sun.text.Normalizer;
+
 import java.text.BreakIterator;
 import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Locale;
-import sun.text.Normalizer;
 
 
 /**

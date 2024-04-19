@@ -37,7 +37,7 @@ import java.util.Arrays;
  * sequence can be changed through certain method calls.
  *
  * <p>Unless otherwise noted, passing a {@code null} argument to a constructor
- * or method in this class will cause a {@link NullPointerException} to be
+ * or method in this class will cause a {@link java.lang.NullPointerException} to be
  * thrown.
  *
  * @author      Michael McCloskey

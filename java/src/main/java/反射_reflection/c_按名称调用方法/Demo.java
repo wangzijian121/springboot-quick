@@ -1,6 +1,6 @@
 package 反射_reflection.c_按名称调用方法;
 
-import java.lang.reflect.*;
+import java.lang.reflect.Method;
 
 /**
  * 按名称调用对象中的方法

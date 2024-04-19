@@ -1,7 +1,5 @@
 package 多线程.java并发编程.i_reentrantlock;
 
-import sun.awt.windows.WPrinterJob;
-
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.IntStream;

@@ -5,13 +5,7 @@ package java.lang;
 import java.io.ObjectStreamField;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Formatter;
-import java.util.Locale;
-import java.util.Objects;
-import java.util.StringJoiner;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
@@ -60,7 +54,7 @@ import java.util.regex.PatternSyntaxException;
  * <i>The Java Language Specification</i>.
  *
  * <p> Unless otherwise noted, passing a <tt>null</tt> argument to a constructor
- * or method in this class will cause a {@link NullPointerException} to be
+ * or method in this class will cause a {@link java.lang.NullPointerException} to be
  * thrown.
  *
  * <p>A {@code String} represents a string in the UTF-16 format

@@ -1,6 +1,8 @@
 package io.a_文件流.e_带有缓冲的文件字节流;
 
-import java.io.*;
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**
  * 使用带有缓冲的字符流

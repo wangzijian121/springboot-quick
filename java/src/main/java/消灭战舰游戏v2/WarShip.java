@@ -2,7 +2,6 @@ package 消灭战舰游戏v2;
 
 import java.awt.*;
 import java.util.List;
-import java.util.Map;
 
 public class WarShip {
 

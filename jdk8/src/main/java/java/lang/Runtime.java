@@ -1,9 +1,13 @@
 package java.lang;
 
-import java.io.*;
-import java.util.StringTokenizer;
 import sun.reflect.CallerSensitive;
 import sun.reflect.Reflection;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.StringTokenizer;
 
 /**
  * Every Java application has a single instance of class

@@ -1,9 +1,7 @@
 package io.d_标准输出流;
 
 import java.io.FileOutputStream;
-import java.io.FilterOutputStream;
 import java.io.PrintStream;
-import java.sql.PreparedStatement;
 
 /**
  * 字节输出流，默认输出到控制台

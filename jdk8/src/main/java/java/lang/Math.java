@@ -1,10 +1,11 @@
 
 
 package java.lang;
-import java.util.Random;
 
-import sun.misc.FloatConsts;
 import sun.misc.DoubleConsts;
+import sun.misc.FloatConsts;
+
+import java.util.Random;
 
 /**
  * Math类包含执行基本数值运算的方法，例如初等指数函数、对数函数、平方根函数和三角函数。

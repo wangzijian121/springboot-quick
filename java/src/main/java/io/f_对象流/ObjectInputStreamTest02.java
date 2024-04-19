@@ -1,9 +1,5 @@
 package io.f_对象流;
 
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
-import java.util.List;
-
 public class ObjectInputStreamTest02 {
     public static void main(String[] args) throws Exception{
 

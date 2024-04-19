@@ -2,9 +2,8 @@
 
 package java.lang;
 
-import sun.misc.FloatingDecimal;
-import sun.misc.FpUtils;
 import sun.misc.DoubleConsts;
+import sun.misc.FloatingDecimal;
 
 /**
  * The {@code Double} 类包装基本类型的值

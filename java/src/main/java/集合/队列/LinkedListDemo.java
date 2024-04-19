@@ -1,6 +1,7 @@
 package 集合.队列;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * @author zijian Wang

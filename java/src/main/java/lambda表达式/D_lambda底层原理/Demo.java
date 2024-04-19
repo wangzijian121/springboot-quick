@@ -1,9 +1,7 @@
 package lambda表达式.D_lambda底层原理;
 
-import java.lang.invoke.LambdaMetafactory;
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
 
 public class Demo {
     public static void main(String[] args) {

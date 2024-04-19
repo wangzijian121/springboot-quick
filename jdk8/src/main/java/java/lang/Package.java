@@ -1,34 +1,25 @@
 
 package java.lang;
 
-import java.lang.reflect.AnnotatedElement;
-import java.io.InputStream;
-import java.util.Enumeration;
-
-import java.util.StringTokenizer;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-
-import java.util.jar.JarInputStream;
-import java.util.jar.Manifest;
-import java.util.jar.Attributes;
-import java.util.jar.Attributes.Name;
-import java.util.jar.JarException;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Iterator;
-
 import sun.net.www.ParseUtil;
 import sun.reflect.CallerSensitive;
 import sun.reflect.Reflection;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.lang.annotation.Annotation;
+import java.lang.reflect.AnnotatedElement;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.security.AccessController;
+import java.security.PrivilegedAction;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.jar.Attributes;
+import java.util.jar.Attributes.Name;
+import java.util.jar.JarInputStream;
+import java.util.jar.Manifest;
 /**
  * java.lang.Package类主要用于获取Java包的元数据信息，例如包名、实现标题、规范标题等。
  * 这些元数据信息可以在运行时被访问和使用，以帮助开发人员更好地了解和管理Java应用程序。

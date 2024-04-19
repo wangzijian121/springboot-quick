@@ -1,6 +1,6 @@
 package 反射_reflection.a_获取类的方法_构造_字段;
 
-import java.lang.reflect.*;
+import java.lang.reflect.Constructor;
 
 /**
  * 通过反射获取构造函数

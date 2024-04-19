@@ -1,9 +1,6 @@
 package 集合.队列;
 
 import java.util.ArrayDeque;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.WeakHashMap;
 
 /**
  * 使用数组实现的双向队列

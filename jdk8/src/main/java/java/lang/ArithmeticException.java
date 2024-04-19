@@ -31,7 +31,7 @@ package java.lang;
  * instance of this class.
  * <p>
  * {@code ArithmeticException} objects may be constructed by the
- * virtual machine as if {@linkplain Throwable#Throwable(String,
+ * virtual machine as if {@linkplain java.lang.Throwable#Throwable(String,
  * Throwable, boolean, boolean) suppression were disabled and/or the
  * stack trace was not writable}.
  *

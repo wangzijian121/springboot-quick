@@ -1,7 +1,6 @@
 package 集合.列表;
 
 import java.util.List;
-import java.util.Queue;
 import java.util.Vector;
 
 /**

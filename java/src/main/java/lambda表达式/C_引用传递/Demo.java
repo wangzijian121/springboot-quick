@@ -1,8 +1,5 @@
 package lambda表达式.C_引用传递;
 
-import java.util.Random;
-import java.util.stream.Stream;
-
 /**
  * @author zijian Wang
  */

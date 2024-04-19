@@ -1,7 +1,6 @@
 package lambda表达式.B_表达式格式;
 
 import java.util.function.Consumer;
-import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 

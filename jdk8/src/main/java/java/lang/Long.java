@@ -3,7 +3,7 @@
 package java.lang;
 
 import java.lang.annotation.Native;
-import java.math.*;
+import java.math.BigInteger;
 
 
 /**

@@ -1,8 +1,10 @@
 package 消灭战舰游戏v2;
 
 import java.awt.*;
-import java.util.*;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
 
 /**
  * GameHelper

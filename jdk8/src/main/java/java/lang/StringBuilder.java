@@ -1,11 +1,7 @@
 package java.lang;
 
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-import java.io.StreamCorruptedException;
+import java.io.*;
 
 /**
  * A mutable sequence of characters.  This class provides an API compatible

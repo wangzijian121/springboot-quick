@@ -2,12 +2,7 @@
 
 package java.lang;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.ObjectStreamField;
-import java.io.Serializable;
-import java.io.StreamCorruptedException;
+import java.io.*;
 import java.util.Arrays;
 
 /**

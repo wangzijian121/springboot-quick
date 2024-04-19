@@ -1,14 +1,13 @@
 package java.lang;
 
-import java.lang.ClassValue.ClassValueMap;
-import java.util.WeakHashMap;
-import java.lang.ref.WeakReference;
-import java.util.concurrent.atomic.AtomicInteger;
-
 import sun.misc.Unsafe;
 
-import static java.lang.ClassValue.ClassValueMap.probeHomeLocation;
+import java.lang.ref.WeakReference;
+import java.util.WeakHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
+
 import static java.lang.ClassValue.ClassValueMap.probeBackupLocations;
+import static java.lang.ClassValue.ClassValueMap.probeHomeLocation;
 
 /**
  * 惰性地将计算值与(潜在的)每种类型关联起来。

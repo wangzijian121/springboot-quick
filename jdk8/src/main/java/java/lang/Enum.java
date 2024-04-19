@@ -2,11 +2,7 @@
 
 package java.lang;
 
-import java.io.Serializable;
-import java.io.IOException;
-import java.io.InvalidObjectException;
-import java.io.ObjectInputStream;
-import java.io.ObjectStreamException;
+import java.io.*;
 
 /**
  *这是所有Java语言枚举类型的公共基类。关于枚举的更多信息，包括编译器合成的隐式声明方法的描述，可以在<cite> the Java&trade;语言规范<引用>。
