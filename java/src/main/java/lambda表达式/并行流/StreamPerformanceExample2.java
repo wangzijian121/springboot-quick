@@ -6,7 +6,11 @@ import java.util.Spliterator;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-public class StreamPerformanceExample {
+/**
+ * 并行流案例2
+ * @author zijian Wang
+ */
+public class StreamPerformanceExample2 {
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>();
         for (int i = 1; i <= 10_000_000; i++) {

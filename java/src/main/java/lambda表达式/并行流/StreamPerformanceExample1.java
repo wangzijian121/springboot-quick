@@ -10,11 +10,11 @@ import java.util.stream.Stream;
  *
  * @author zijian Wang
  */
-public class Demo {
+public class StreamPerformanceExample1 {
 
     public static void main(String[] args) {
 
-        final long count = 200_000_000;
+        final long count = 200_000_000L;
         Random random = new Random();
         //创建2亿条的list
         List<Integer> list = Stream.generate(() -> random.nextInt(20))
