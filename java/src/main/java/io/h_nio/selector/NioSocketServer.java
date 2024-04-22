@@ -26,7 +26,6 @@ public class NioSocketServer extends Thread {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
-
         ServerSocketChannel channel = ServerSocketChannel.open();
         channel.configureBlocking(false);
         channel.bind(new InetSocketAddress(8888));
