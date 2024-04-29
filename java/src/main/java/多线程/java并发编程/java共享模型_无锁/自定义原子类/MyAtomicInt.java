@@ -15,6 +15,7 @@ public class MyAtomicInt {
 
     static {
         try {
+            //1.获取unsafe对象
             Field f = Unsafe.class.getDeclaredField("theUnsafe");
             f.setAccessible(true);
             unsafe = (Unsafe) f.get(null);
@@ -24,6 +25,7 @@ public class MyAtomicInt {
             throw new RuntimeException(e);
         }
         try {
+            //2.通过类对象和字段
             offset = unsafe.objectFieldOffset(MyAtomicInt.class.getDeclaredField("value"));
         } catch (NoSuchFieldException e) {
             throw new RuntimeException(e);
@@ -38,7 +40,15 @@ public class MyAtomicInt {
         return value;
     }
 
+    /**
+     * 添加
+     *
+     * @param addValue
+     * @return
+     */
     private boolean add(int addValue) {
+
+        /*3.CAS 循环判断 并更新*/
         int prev;
         do {
             prev = value;
