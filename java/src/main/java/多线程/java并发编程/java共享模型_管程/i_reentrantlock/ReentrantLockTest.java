@@ -15,6 +15,7 @@ public class ReentrantLockTest {
 
     public void add() {
         lock.lock();
+
         try {
             TimeUnit.SECONDS.sleep(1);
             System.out.println("等待此锁的估计线程数:"+lock.getQueueLength());

@@ -142,13 +142,11 @@ public class ConnectPool {
                                     throw new RuntimeException(e);
                                 }
                                 passedTime = System.currentTimeMillis() - startTime;
-
                             }
                         }
                     }
                 }
             }
-
         }
     }
 
