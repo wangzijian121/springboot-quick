@@ -28,12 +28,11 @@ public class Task implements Runnable {
      */
     @Override
     public void run() {
-        System.out.println(name+" 执行中💬");
+        System.out.println(name+" 执行中");
         try {
             TimeUnit.SECONDS.sleep(1);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-//        System.out.println(name+"执行完成✔");
     }
 }
