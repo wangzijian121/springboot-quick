@@ -1,9 +1,7 @@
-package 多线程.java并发编程.java共享模型_工具.线程池.invoke;
+package 多线程.java并发编程.java共享模型_juc工具.线程池.invoke;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.*;
 import java.util.stream.Collectors;

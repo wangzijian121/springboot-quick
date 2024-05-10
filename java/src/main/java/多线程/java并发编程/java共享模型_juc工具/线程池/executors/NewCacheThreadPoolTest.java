@@ -1,4 +1,4 @@
-package 多线程.java并发编程.java共享模型_工具.线程池.executors;
+package 多线程.java并发编程.java共享模型_juc工具.线程池.executors;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

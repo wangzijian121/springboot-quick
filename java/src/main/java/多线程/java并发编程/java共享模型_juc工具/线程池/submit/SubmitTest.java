@@ -1,4 +1,4 @@
-package 多线程.java并发编程.java共享模型_工具.线程池.submit;
+package 多线程.java并发编程.java共享模型_juc工具.线程池.submit;
 
 import java.util.concurrent.*;
 

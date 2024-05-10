@@ -1,8 +1,8 @@
-package 多线程.java并发编程.java共享模型_工具.自定义线程池;
+package 多线程.java并发编程.java共享模型_juc工具.自定义线程池;
 
 import org.junit.Assert;
 import org.junit.Test;
-import 多线程.java并发编程.java共享模型_工具.自定义线程池.impl.NewThreadPolicy;
+import 多线程.java并发编程.java共享模型_juc工具.自定义线程池.impl.NewThreadPolicy;
 
 import java.util.concurrent.TimeUnit;
 import java.util.stream.IntStream;
