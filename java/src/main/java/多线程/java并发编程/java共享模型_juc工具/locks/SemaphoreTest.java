@@ -23,7 +23,6 @@ public class SemaphoreTest {
                     System.exit(0);
                 } else {
                     System.out.println("容量没了！");
-
                 }
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
