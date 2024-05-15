@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 public class ConcurrentHashMapTest {
 
     public static void main(String[] args) {
-        ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap(16);
+        ConcurrentHashMap<String, Integer> concurrentHashMap = new ConcurrentHashMap<>(16);
         concurrentHashMap.put("count", 0);
         //10个线程分别对这个map中的countkey加1.
         IntStream.range(0, 10).forEach(x ->
@@ -23,11 +23,38 @@ public class ConcurrentHashMapTest {
                 }
                 ).start());
         SleepUtils.sleep(1);
+        concurrentHashMap.put("count2", 2000);
+        //get
+        System.out.println(concurrentHashMap.get("count"));
+        //forEachKey
+        concurrentHashMap.forEachKey(3, x -> System.out.print(x));
+        //forEachValue
+        concurrentHashMap.forEachValue(3, x -> System.out.print("---" + x));
+        //	isEmpty
+        System.out.println("是否为空：" + concurrentHashMap.isEmpty());
+        //keys
+        System.out.println(concurrentHashMap.keys());
+        //keySet
+        concurrentHashMap.keySet().forEach(x -> System.out.println(x));
+        System.out.println(concurrentHashMap.toString());
+        //values
+        System.out.println(concurrentHashMap.values());
 
-//        System.out.println(concurrentHashMap.get("count"));
-        concurrentHashMap.forEachKey(3,x-> System.out.println(x));
-        concurrentHashMap.forEachValue(3,x-> System.out.println(x));
+        //search 搜索key和value
+        Object search = concurrentHashMap.search(1, (x, y) -> {
+            if (("count").equals(x) && (int) y == 1000) {
+                System.out.println("key:" + x + "  value:" + y);
+                return x;
+            } else {
+                return null;
+            }
+        });
+        System.out.println(search.toString());
 
-
+        //reduce 对所有value进行累加。
+        Integer integer = concurrentHashMap.reduceValues(3, Integer::sum);
+        System.out.println(integer);
+        //按类型计算输出：将所有v*2 然后按long累加输出。
+        System.out.println(concurrentHashMap.reduceToLong(3, (k, v) -> v * 2, 0L, Long::sum));
     }
 }
