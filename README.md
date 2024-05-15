@@ -1,5 +1,5 @@
 
-![AI图 ](doc/welocome.png)
+![AI图 ](doc/welcome.png)
 
 ## data-structure 模块
 ### 数据结构😰
