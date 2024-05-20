@@ -4,6 +4,7 @@ import com.example.j2ee.dao.VirtualDatabase;
 import com.example.j2ee.bean.Person;
 import com.example.utils.StringUtils;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
@@ -33,6 +34,7 @@ public class MyHttpServlet extends HttpServlet {
                 writer.print("通过Session登录成功，你的信息是：" + session.getAttribute("person").toString());
                 writer.close();
                 response.sendRedirect("person.jsp");
+
                 return;
             }
         }
@@ -82,4 +84,5 @@ public class MyHttpServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {
 
     }
+
 }
