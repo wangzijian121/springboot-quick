@@ -1,4 +1,4 @@
-package com.example.j2ee.pojo;
+package com.example.j2ee.bean;
 
 /**
  * bean

@@ -1,4 +1,4 @@
-<%@ page import="com.example.j2ee.pojo.Person" %>
+<%@ page import="com.example.j2ee.bean.Person" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>

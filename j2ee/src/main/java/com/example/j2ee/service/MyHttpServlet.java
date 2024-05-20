@@ -1,7 +1,7 @@
 package com.example.j2ee.service;
 
 import com.example.j2ee.dao.VirtualDatabase;
-import com.example.j2ee.pojo.Person;
+import com.example.j2ee.bean.Person;
 import com.example.utils.StringUtils;
 
 import javax.servlet.http.*;
