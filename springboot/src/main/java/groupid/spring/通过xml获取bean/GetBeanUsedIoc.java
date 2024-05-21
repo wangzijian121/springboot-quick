@@ -19,12 +19,18 @@ public class GetBeanUsedIoc {
         //5.ResourceLoader 接口提供了 getResource 方法，用于加载资源文件。ClassPathXmlApplicationContext 会调用这个方法来加载配置文件。
 
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        System.out.println("当前类路径："+System.getProperty("java.class.path"));
-        System.out.println("Classpath：" + System.getenv());
-        System.getenv().keySet().forEach(x -> System.out.println(x+": " + System.getenv().get(x)));
+//        System.out.println("当前类路径："+System.getProperty("java.class.path"));
+//        System.out.println("Classpath：" + System.getenv());
+//        System.getenv().keySet().forEach(x -> System.out.println(x+": " + System.getenv().get(x)));
 //        ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"WEB-INF/applicationContext.xml"}, MyBean.class, null);
 
         MyBean myBean = (MyBean) context.getBean("MyBean");
         System.out.println(myBean);
+
+        String[] beanNames = context.getBeanDefinitionNames();
+        for (String beanName : beanNames) {
+            Object bean = context.getBean(beanName);
+            System.out.println("Bean name: " + beanName + ", Bean type: " + bean.getClass().getName());
+        }
     }
 }

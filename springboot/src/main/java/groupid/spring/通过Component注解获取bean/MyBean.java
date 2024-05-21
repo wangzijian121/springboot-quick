@@ -1,7 +1,5 @@
-package groupid.spring.通过xml获取bean;
+package groupid.spring.通过Component注解获取bean;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,7 +9,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class MyBean {
-    private String name = "wangzijian";
+    private String name = "wangzijian-component";
 
     @Override
     public String toString() {
