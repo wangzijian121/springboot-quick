@@ -58,7 +58,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>groupid.spring.Application</mainClass>
+                    <mainClass>com.zjyun.spring.Application</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

@@ -1,4 +1,4 @@
-package groupid.spring.model;
+package com.zjyun.spring.model;
 
 import org.springframework.stereotype.Component;
 
