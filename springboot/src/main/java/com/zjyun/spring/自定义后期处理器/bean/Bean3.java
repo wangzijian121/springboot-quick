@@ -8,5 +8,6 @@ import org.springframework.stereotype.Component;
  * @Date: 2024/5/27
  */
 @Component
-public class Bean1 {
+public class Bean3 {
+
 }
