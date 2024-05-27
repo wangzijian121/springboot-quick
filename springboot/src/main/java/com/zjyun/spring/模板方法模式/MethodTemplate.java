@@ -13,5 +13,6 @@ public class MethodTemplate {
         beanFactory.addBeanPostProcess(() -> System.out.println("初始化之前的处理！"));
         beanFactory.addBeanPostProcess(() -> System.out.println("初始化之后的处理！"));
         beanFactory.getBean();
+
     }
 }

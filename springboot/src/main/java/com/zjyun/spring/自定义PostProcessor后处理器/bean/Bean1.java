@@ -1,4 +1,4 @@
-package com.zjyun.spring.自定义Bean容器.bean;
+package com.zjyun.spring.自定义PostProcessor后处理器.bean;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -8,24 +8,23 @@ import org.springframework.stereotype.Component;
  * @Author: Wang Zijian
  * @Date: 2024/5/27
  */
-@Component
+
 public class Bean1 {
     @Autowired
     private Bean2 bean2;
     private String name;
 
-
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+
+    public void setBean2(Bean2 bean2) {
+        this.bean2 = bean2;
     }
 
-    public Bean1(Bean2 bean2) {
-        this.bean2 = bean2;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
@@ -36,4 +35,3 @@ public class Bean1 {
                 '}';
     }
 }
-2

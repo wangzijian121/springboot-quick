@@ -1,4 +1,4 @@
-package com.zjyun.spring.自定义Bean容器.bean;
+package com.zjyun.spring.自定义PostProcessor后处理器.bean;
 
 import org.springframework.stereotype.Component;
 
@@ -11,6 +11,8 @@ import org.springframework.stereotype.Component;
 public class Bean2 {
     private String name;
 
+    public Bean2() {
+    }
 
     public String getName() {
         return name;
@@ -20,10 +22,5 @@ public class Bean2 {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Bean2{" +
-                "name='" + name + '\'' +
-                '}';
-    }
+
 }
