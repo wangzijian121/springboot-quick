@@ -35,6 +35,7 @@ public class ApplicationContextTest {
     public static void testFileSystemXmlApplicationContext() {
         ApplicationContext context = new FileSystemXmlApplicationContext("D:\\项目\\王子健-Java\\Java\\springboot\\target\\classes\\WEB-INF\\applicationContext.xml");
         System.out.println(context.getBean(Bean1.class));
+
     }
 
     public static void testAnnotationConfigApplicationContext() {

@@ -1,5 +1,6 @@
 package 多线程.java并发编程.java共享模型_juc工具.locks;
 
+import javax.annotation.concurrent.GuardedBy;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
@@ -13,7 +14,10 @@ public class ReentrantLockTest {
     static CountDownLatch countDownLatch = new CountDownLatch(10);
     private static int sum;
 
+
+    @GuardedBy("reentrantLock")
     public static void main(String[] args) {
+
         IntStream.range(0, 10).forEach(x -> new Thread(() -> {
             reentrantLock.lock();
             try {

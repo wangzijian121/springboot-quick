@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  * @Author: Wang Zijian
  * @Date: 2024/5/22
  */
-@Configuration
+//@Configuration
 public class WebConfig {
 
     @Bean
