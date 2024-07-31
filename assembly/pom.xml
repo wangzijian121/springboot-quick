@@ -9,13 +9,13 @@
 
     <parent>
         <groupId>com.base</groupId>
-        <artifactId>spring-boot-base</artifactId>
+        <artifactId>springboot-quick-start</artifactId>
         <version>1.0.1</version>
     </parent>
 
     <properties>
         <!--所有的都必须统一，如果为写死的数字，那么都要为数字，否则都要是变量形式，不然会报错-->
-        <assembly.name>spring-boot-base-v${project.version}</assembly.name>
+        <assembly.name>springboot-quick-start-v${project.version}</assembly.name>
         <assembly.format>tgz</assembly.format>
         <skipDeploy>true</skipDeploy>
     </properties>

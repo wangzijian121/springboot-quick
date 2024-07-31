@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
     <parent>
         <groupId>com.base</groupId>
-        <artifactId>spring-boot-base</artifactId>
+        <artifactId>springboot-quick-start</artifactId>
         <version>1.0.1</version>
     </parent>
     <properties>
