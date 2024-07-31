@@ -29,16 +29,6 @@
             </includes>
         </fileSet>
 
-        <!--模块资源resources-->
-<!--        <fileSet>
-            <directory>${project.parent.basedir}/../config</directory>
-            <outputDirectory>conf</outputDirectory>
-            <includes>
-                <include>*.xml</include>
-                <include>*.conf</include>
-            </includes>
-        </fileSet>-->
-
         <fileSet>
             <directory>${project.parent.basedir}/base/src/main/resources</directory>
             <outputDirectory>conf</outputDirectory>

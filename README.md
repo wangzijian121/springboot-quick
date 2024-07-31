@@ -31,4 +31,6 @@
 - `versions-maven-plugin`：命令比较多，可以参考官网：https://www.mojohaus.org/versions/versions-maven-plugin/index.html
 常用命令：`mvn versions:set|commit|revert` 可导航到maven-插件-versions快速修改版本，模块多的谨慎操作，多备份。
 - `assembly`：默认打为tar包 和目录的形式，其中包括bin、conf、libs、db、docs。可自行配置`assembly/assembly/assembly.xml`指定打包方式。
-
+# 运行
+- `默认运行方式`:`sh bin/start.sh`
+- `默认停止方式`:`sh bin/stop.sh`
