@@ -1,6 +1,14 @@
+[![Quality gate](http://zjyun.cc:6008/api/project_badges/quality_gate?project=springboot-quick-start&token=sqb_d4e045e166323b1175cf5c0a6dd6083af8fb32dc)](http://zjyun.cc:6008/dashboard?id=springboot-quick-start)
+
+[![警报](http://zjyun.cc:6008/api/project_badges/measure?project=springboot-quick-start&metric=alert_status&token=sqb_d4e045e166323b1175cf5c0a6dd6083af8fb32dc)](http://zjyun.cc:6008/dashboard?id=springboot-quick-start)
+[![可维护性评级](http://zjyun.cc:6008/api/project_badges/measure?project=springboot-quick-start&metric=sqale_rating&token=sqb_d4e045e166323b1175cf5c0a6dd6083af8fb32dc)](http://zjyun.cc:6008/dashboard?id=springboot-quick-start)
+[![可靠性等级](http://zjyun.cc:6008/api/project_badges/measure?project=springboot-quick-start&metric=reliability_rating&token=sqb_d4e045e166323b1175cf5c0a6dd6083af8fb32dc)](http://zjyun.cc:6008/dashboard?id=springboot-quick-start)
+[![安全等级](http://zjyun.cc:6008/api/project_badges/measure?project=springboot-quick-start&metric=security_rating&token=sqb_d4e045e166323b1175cf5c0a6dd6083af8fb32dc)](http://zjyun.cc:6008/dashboard?id=springboot-quick-start)
+[![代码行数](http://zjyun.cc:6008/api/project_badges/measure?project=springboot-quick-start&metric=ncloc&token=sqb_d4e045e166323b1175cf5c0a6dd6083af8fb32dc)](http://zjyun.cc:6008/dashboard?id=springboot-quick-start)
+
+
 # springboot快速脚手架🚀
 快速的springboot脚手架，帮您快速投入开发，使用前可以自行更新`模块`、`版本`、`打包方式`，本项目具有以下功能：
-
 - springboot-web✅
 - lombok✅
 - mybatis-plus✅
