@@ -1,8 +1,7 @@
 package com.zjyun.springboot.mapper;
 
-import com.zjyun.springboot.entity.Account;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.apache.ibatis.annotations.Mapper;
+import com.zjyun.springboot.entity.Account;
 
 /**
  * <p>
