@@ -34,3 +34,7 @@
 # 运行
 - `默认运行方式`:`sh bin/start.sh`
 - `默认停止方式`:`sh bin/stop.sh`
+
+# 代码质量校验
+可使用`Jacoco`+`SonarQube`做代码质量管理。
+相关指令：`mvn clean verify sonar:sonar   -Dsonar.projectKey=springboot-quick-start   -Dsonar.projectName='springboot-quick-start'   -Dsonar.host.url=<SonarQubeServer：port>   -Dsonar.token=sqp_xxxxxx`
