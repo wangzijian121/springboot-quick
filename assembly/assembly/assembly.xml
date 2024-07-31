@@ -5,26 +5,25 @@
         <format>tar.gz</format>
         <format>dir</format>
     </formats>
-    <includeBaseDirectory>true</includeBaseDirectory>
     <fileSets>
         <!--模块jar包-->
         <fileSet>
             <directory>${project.parent.basedir}/base/target</directory>
-            <outputDirectory>lib</outputDirectory>
+            <outputDirectory>libs</outputDirectory>
             <includes>
                 <include>*.jar</include>
             </includes>
         </fileSet>
         <fileSet>
             <directory>${project.parent.basedir}/m1/target</directory>
-            <outputDirectory>lib</outputDirectory>
+            <outputDirectory>libs</outputDirectory>
             <includes>
                 <include>*.jar</include>
             </includes>
         </fileSet>
         <fileSet>
             <directory>${project.parent.basedir}/m1/target</directory>
-            <outputDirectory>lib</outputDirectory>
+            <outputDirectory>libs</outputDirectory>
             <includes>
                 <include>*.jar</include>
             </includes>
@@ -33,7 +32,7 @@
         <!--模块资源resources-->
         <fileSet>
             <directory>${project.parent.basedir}/../config</directory>
-            <outputDirectory>config</outputDirectory>
+            <outputDirectory>conf</outputDirectory>
             <includes>
                 <include>*.xml</include>
                 <include>*.conf</include>
@@ -42,7 +41,7 @@
 
         <fileSet>
             <directory>${project.parent.basedir}/base/src/main/resources</directory>
-            <outputDirectory>config</outputDirectory>
+            <outputDirectory>conf</outputDirectory>
             <includes>
                 <include>*prod.xml</include>
                 <include>*prod.properties</include>
@@ -51,7 +50,7 @@
         </fileSet>
         <fileSet>
             <directory>${project.parent.basedir}/m1/src/main/resources</directory>
-            <outputDirectory>config</outputDirectory>
+            <outputDirectory>conf</outputDirectory>
             <includes>
                 <include>*prod.xml</include>
                 <include>*prod.properties</include>
@@ -60,7 +59,7 @@
         </fileSet>
         <fileSet>
             <directory>${project.parent.basedir}/m2/src/main/resources</directory>
-            <outputDirectory>config</outputDirectory>
+            <outputDirectory>conf</outputDirectory>
             <includes>
                 <include>*prod.xml</include>
                 <include>*prod.properties</include>
@@ -92,11 +91,11 @@
 
     <dependencySets>
         <dependencySet>
-            <!--不使用项目的artifact，第三方jar不要解压，打包进tar.gz文件的lib目录-->
-            <!--配置项目第三方provided、system、runtime不同方式的jar打包进lib目录-->
+            <!--不使用项目的artifact，第三方jar不要解压，打包进tar.gz文件的libs目录-->
+            <!--配置项目第三方provided、system、runtime不同方式的jar打包进libs目录-->
             <unpack>false</unpack>
             <useProjectArtifact>true</useProjectArtifact>
-            <outputDirectory>lib</outputDirectory>
+            <outputDirectory>libs</outputDirectory>
             <scope>provided</scope>
             <excludes>
                 <!--排除assembly模块的jar包-->
@@ -106,7 +105,7 @@
         <dependencySet>
             <unpack>false</unpack>
             <useProjectArtifact>true</useProjectArtifact>
-            <outputDirectory>lib</outputDirectory>
+            <outputDirectory>libs</outputDirectory>
             <scope>system</scope>
             <excludes>
                 <exclude>base:assembly</exclude>
@@ -115,7 +114,7 @@
         <dependencySet>
             <unpack>false</unpack>
             <useProjectArtifact>true</useProjectArtifact>
-            <outputDirectory>lib</outputDirectory>
+            <outputDirectory>libs</outputDirectory>
             <scope>runtime</scope>
             <excludes>
                 <exclude>com.base:assembly</exclude>
@@ -132,7 +131,7 @@
                 <include>com.base:m2</include>
             </includes>
             <binaries>
-                <outputDirectory>lib</outputDirectory>
+                <outputDirectory>libs</outputDirectory>
                 <unpack>false</unpack>
             </binaries>
         </moduleSet>
