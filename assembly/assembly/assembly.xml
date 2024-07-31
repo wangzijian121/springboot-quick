@@ -30,14 +30,14 @@
         </fileSet>
 
         <!--模块资源resources-->
-        <fileSet>
+<!--        <fileSet>
             <directory>${project.parent.basedir}/../config</directory>
             <outputDirectory>conf</outputDirectory>
             <includes>
                 <include>*.xml</include>
                 <include>*.conf</include>
             </includes>
-        </fileSet>
+        </fileSet>-->
 
         <fileSet>
             <directory>${project.parent.basedir}/base/src/main/resources</directory>
@@ -80,6 +80,11 @@
         <fileSet>
             <directory>${project.parent.basedir}/assembly/db</directory>
             <outputDirectory>db</outputDirectory>
+        </fileSet>
+        <!--文档目录-->
+        <fileSet>
+            <directory>${project.parent.basedir}/assembly/docs</directory>
+            <outputDirectory>docs</outputDirectory>
         </fileSet>
 
         <!--logs-->
