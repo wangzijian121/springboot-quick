@@ -15,3 +15,6 @@ spring:
       "prod": prod
       "test": test
 
+mybatis-plus:
+  configuration:
+    local-cache-scope: SESSION

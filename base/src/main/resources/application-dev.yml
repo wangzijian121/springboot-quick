@@ -16,4 +16,5 @@ spring:
 #Mybatis-Plus
 mybatis-plus:
   configuration:
+    local-cache-scope: SESSION
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
