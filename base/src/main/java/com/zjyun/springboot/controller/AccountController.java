@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/account")
 public class AccountController {
 
-    private IAccountService accountService;
+    private final IAccountService accountService;
 
     @Autowired
     public AccountController(IAccountService accountService) {
